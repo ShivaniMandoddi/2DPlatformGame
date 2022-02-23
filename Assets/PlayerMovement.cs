@@ -53,4 +53,8 @@ public class PlayerMovement : MonoBehaviour
         IsFacingRight = !IsFacingRight;
         transform.Rotate(0, 180, 0);
     }
+    public void SuperJump()
+    {
+        rb.velocity = Vector2.up * playerJumpForce*2.0f;
+    }
 }
